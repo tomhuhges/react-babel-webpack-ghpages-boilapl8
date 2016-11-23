@@ -1,4 +1,4 @@
-export default function () {
+export default function component() {
   let element = document.createElement('h1');
 
   element.innerHTML = 'Hello world !!!!!';

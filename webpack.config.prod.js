@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
-export default function prod(options) {
+export default function prod (options) {
   return {
     output: {
       publicPath: '/webpack-test/',

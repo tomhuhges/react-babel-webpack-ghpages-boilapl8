@@ -1,6 +1,6 @@
 import webpack from 'webpack';
 
-export default function dev(options) {
+export default function dev (options) {
   return {
     output: {
       // webpack-dev-server doesn't support [chunkhash],
