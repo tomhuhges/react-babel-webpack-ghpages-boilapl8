@@ -1,6 +1,6 @@
-const webpack = require('webpack');
+import webpack from 'webpack';
 
-exports.config = function(options) {
+export default function dev(options) {
   return {
     output: {
       // webpack-dev-server doesn't support [chunkhash],
