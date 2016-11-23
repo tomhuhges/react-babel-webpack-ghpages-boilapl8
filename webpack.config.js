@@ -6,7 +6,7 @@ const prod = require('./webpack.prod.config');
 
 var paths = {
   src: __dirname + '/src',
-  build: __dirname + '/docs',
+  build: __dirname + '/dist',
   css: __dirname + '/src/css'
 };
 

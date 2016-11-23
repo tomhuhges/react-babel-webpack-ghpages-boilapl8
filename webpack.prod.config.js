@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 exports.config = function(options) {
   return {
     output: {
-      publicPatch: '/webpack-test/'
+      publicPath: '/webpack-test/',
       filename: '[name].[chunkhash].js'
     },
     module: {
