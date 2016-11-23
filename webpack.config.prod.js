@@ -21,6 +21,12 @@ export default function prod(options) {
       new CleanWebpackPlugin( [options.paths.build], {
         root: process.cwd()
       }),
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify('production')
+        }
+      }),
+      new webpack.optimize.UglifyJsPlugin(),
       new ExtractTextPlugin('[name].[chunkhash].css')
     ]
   };
