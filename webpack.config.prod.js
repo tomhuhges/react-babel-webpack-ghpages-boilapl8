@@ -26,7 +26,15 @@ export default function prod (options) {
           NODE_ENV: JSON.stringify('production')
         }
       }),
-      new webpack.optimize.UglifyJsPlugin(),
+      new webpack.optimize.UglifyJsPlugin({
+      comments: false,
+      compress: {
+        warnings: false
+      },
+      mangle: {
+        except: ['webpackJsonp']
+      }
+    }),
       new ExtractTextPlugin('[name].[chunkhash].css')
     ]
   };
