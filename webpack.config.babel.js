@@ -62,7 +62,7 @@ if ( process.env.npm_lifecycle_event === 'build' ) {
   // dev config
   config = merge(
     defaults,
-    dev.config({
+    dev({
       paths: paths,
       server: {
         host: process.env.HOST,
